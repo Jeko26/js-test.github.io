@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>js</title>
+  </head>
+  <body>
+    <input type="button" onclick="newopen();" value="В бой!" />
+    <br />
+    <br />
+    <dialog id="favDialog">
+      <form method="dialog">
+        <p>
+          <label
+            >Какой танк круче в World of tanks:
+            <select>
+              <option></option>
+              <option>Т-34</option>
+              <option>Шерман</option>
+              <option>Тигр</option>
+            </select>
+          </label>
+        </p>
+        <menu>
+          <button value="cancel">Отмена</button>
+          <button id="confirmBtn" value="default">Выбрать</button>
+        </menu>
+      </form>
+    </dialog>
+    <menu>
+      <button id="chooseTank">Выбрать танк</button>
+    </menu>
+    <output aria-live="polite"></output>
+    <div id="div1"></div>
+    <input type="button" value="Start" onclick="Timerstart();" />
+    <input type="button" value="Stop" onclick="Timerstop();" />
+  </body>
+  <script src="js/script.js"></script>
+</html>
